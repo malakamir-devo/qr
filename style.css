@@ -1,0 +1,105 @@
+/*******************
+    Rest
+ *******************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*******************
+    Imports
+ *******************/
+@font-face {
+    font-family: 'Outfit';
+    src: url(./fonts/Outfit-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Outfit-b';
+    src: url(./fonts/Outfit-Bold.ttf);
+    font-weight: 700;
+}
+
+/*******************
+    Global
+ *******************/
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    background-color: var(--Light-gray);
+    text-align: center;
+    font-family: 'Outfit';
+    font-size: 22px;
+
+}
+
+/*******************
+    page Contents
+ *******************/
+.main-section {
+    height: 90dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 320px;
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 4px 1px var(--Grayish-blue);
+
+    & h1 {
+        font-size: 1em;
+        margin-bottom: 20px;
+        color: var(--Dark-blue);
+        font-weight: 700;
+    }
+
+    & p {
+
+        font-size: 15px;
+        margin-bottom: 20px;
+        color: var(--Grayish-blue);
+    }
+
+}
+
+.info {
+    padding: 0px 10px;
+}
+
+.qr-code {
+    height: 270px;
+    background-image: url(./images/image-qr-code.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/*******************
+    Media
+ *******************/
